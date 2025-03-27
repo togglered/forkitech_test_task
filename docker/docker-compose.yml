@@ -1,0 +1,10 @@
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      - POSTGRES_DB=bitcoin
+      - POSTGRES_USER=bitcoin
+      - POSTGRES_PASSWORD=123456
+    ports:
+      - 5432:5432
+  
